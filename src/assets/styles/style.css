@@ -1,0 +1,321 @@
+/* montserrat-regular - latin_cyrillic */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v23-latin_cyrillic-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''), url('../fonts/montserrat-v23-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v23-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v23-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v23-latin_cyrillic-regular.ttf') format('truetype'); /* Safari, Android, iOS */
+    /* Legacy iOS */
+}
+
+
+/* montserrat-500 - latin_cyrillic */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v23-latin_cyrillic-500.eot');
+    /* IE9 Compat Modes */
+    src: local(''), url('../fonts/montserrat-v23-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v23-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v23-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v23-latin_cyrillic-500.ttf') format('truetype'); /* Safari, Android, iOS */
+    /* Legacy iOS */
+}
+
+
+/* montserrat-700 - latin_cyrillic */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v23-latin_cyrillic-700.eot');
+    /* IE9 Compat Modes */
+    src: local(''), url('../fonts/montserrat-v23-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/montserrat-v23-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/montserrat-v23-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/montserrat-v23-latin_cyrillic-700.ttf') format('truetype'); /* Safari, Android, iOS */
+    /* Legacy iOS */
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #1111111A;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    top: 22px;
+    left: 51px;
+}
+
+header .logo img {
+    width: 175px;
+    height: 32px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #1111117A;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 7px;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid #868686;
+}
+
+.active {
+    border-bottom: 2px solid #01A7FD;
+    color: black;
+}
+
+header nav a:first-child {
+    margin-right: 24px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+main .personInfo {
+    width: 616px;
+    margin: 33px 24px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .personInfo:first-child {
+    margin: 30px 24px 0;
+}
+
+main .personInfo h2 {
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+main .personInfo input {
+    width: 100%;
+    border: 1px solid #F1F1F1;
+    border-radius: 4px;
+}
+
+
+/* ****************** */
+
+.text-field_floating {
+    position: relative;
+    margin-top: 10px;
+}
+
+.text-field_floating .text-field__input {
+    height: 56px;
+    padding: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #111111;
+}
+
+.text-field_floating .text-field__label {
+    color: #1111117A;
+    font-size: 1rem;
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 16px;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity .15s ease-in-out, transform .15s ease-in-out;
+}
+
+.text-field_floating .text-field__input::-moz-placeholder {
+    color: transparent;
+}
+
+.text-field_floating .text-field__input::placeholder {
+    color: transparent;
+}
+
+.text-field_floating .text-field__input:focus,
+.text-field_floating .text-field__input:not(:placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: .625rem;
+    outline: none;
+}
+
+.text-field_floating .text-field__input:focus~.text-field__label,
+.text-field_floating .text-field__input:not(:placeholder-shown)~.text-field__label {
+    transform: scale(.85) translateY(-.55rem) translateX(.15rem);
+}
+
+
+/* ****************** */
+
+main .personInfo .addChild {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .personInfo .addChild button {
+    height: 44px;
+    color: #01A7FD;
+    background-color: #fff;
+    border: 2px solid #01A7FD;
+    border-radius: 100px;
+    font-size: 0.95rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+main .personInfo .addChild button:hover {
+    background-color: rgba(110, 65, 226, 0.04);
+}
+
+main .personInfo .addChild button:active {
+    background-color: rgba(110, 65, 226, 0.16);
+}
+
+main .personInfo .addChild button:disabled {
+    opacity: 0.56;
+    cursor: default;
+}
+
+main .personInfo .addChild button svg {
+    display: inline-block;
+    margin-right: 0.25rem;
+}
+
+main .personInfo .child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .personInfo .child button {
+    height: 44px;
+    color: #01A7FD;
+    background-color: #fff;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 10px 0 0;
+}
+
+main .personInfo .child .text-field_floating {
+    min-width: 260px;
+}
+
+main .save {
+    width: 616px;
+}
+
+main .save button {
+    height: 44px;
+    color: #fff;
+    background-color: #01A7FD;
+    border: none;
+    border-radius: 100px;
+    font-size: 0.95rem;
+    font-weight: 400;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+main .save button:hover {
+    background-color: rgba(15, 121, 175, 1);
+}
+
+main .save button:active {
+    background-color: rgba(89, 199, 159, 1);
+}
+
+main .save button:disabled {
+    background-color: rgba(206, 236, 252, 1);
+    cursor: default;
+}
+
+main .save button:focus {
+    border: 2px solid rgba(17, 17, 17, 0.48);
+}
+
+footer {
+    width: 100%;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 664px) {
+    main .personInfo {
+        width: 100%;
+    }
+    main {
+        margin: 30px 24px;
+    }
+    main .save {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    header .logo {
+        left: 1px;
+    }
+    header {
+        justify-content: flex-end;
+    }
+    header nav a {
+        margin-right: 24px;
+    }
+    .text-field_floating {
+        width: 100%;
+    }
+}
